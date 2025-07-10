@@ -28,11 +28,6 @@ output "load_balancer_dns" {
   value       = module.kubernetes.load_balancer_dns
 }
 
-output "load_balancer_ip" {
-  description = "IP address of the application load balancer"
-  value       = module.kubernetes.load_balancer_ip
-}
-
 output "application_url" {
   description = "URL to access the Space Invaders application"
   value       = "http://${module.kubernetes.load_balancer_dns}"
