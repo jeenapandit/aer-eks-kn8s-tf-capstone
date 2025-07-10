@@ -1,5 +1,5 @@
 resource "aws_security_group" "node_group_one" {
-  name   = "${var.project}-node-group-one-sg"
+  name   = "${var.project}-ng-1-sg"
   vpc_id = module.vpc.vpc_id
 
   ingress {
@@ -13,12 +13,12 @@ resource "aws_security_group" "node_group_one" {
   }
 
   tags = {
-    Name = "${var.project}-node-group-one-sg"
+    Name = "${var.project}-ng-1-sg"
   }
 }
 
 resource "aws_security_group" "node_group_two" {
-  name   = "${var.project}-node-group-two-sg"
+  name   = "${var.project}-ng-2-sg"
   vpc_id = module.vpc.vpc_id
 
   ingress {
@@ -32,6 +32,6 @@ resource "aws_security_group" "node_group_two" {
   }
 
   tags = {
-    Name = "${var.project}-node-group-two-sg"
+    Name = "${var.project}-ng-2-sg"
   }
 }
