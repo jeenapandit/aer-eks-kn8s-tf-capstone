@@ -61,7 +61,6 @@ module "kubernetes" {
 **Load Balancer Configuration:**
 - **Type**: AWS Classic Load Balancer
 - **Port**: 80 (HTTP)
-- **Custom Naming**: Uses project name for load balancer identification
 
 **Namespace:**
 - Creates an isolated namespace named `{project}-namespace`
