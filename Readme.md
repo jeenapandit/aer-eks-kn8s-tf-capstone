@@ -68,3 +68,7 @@ The cheat_sheet.txt provides kubectl commands to interact with the deployed appl
 - **`kubernetes-namespace.tf`** - Creates a dedicated namespace for the application
 - **`variables.tf`** - Input variables for the module
 - **`output.tf`** - Output values from the module (like load balancer URL)
+
+## Getting Started
+
+For detailed deployment instructions, please refer to [DEPLOYMENT.md](DEPLOYMENT.md) which contains step-by-step guidance for deploying this application on a Linux EC2 instance.
